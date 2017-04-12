@@ -1,0 +1,95 @@
+body { 
+  font: 28px sans-serif;
+  background-color: rgba(0, 0, 0, 0.8)
+}
+* {box-sizing: border-box;}
+    
+#calculator {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    padding: 0 8px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: white solid 2px;
+    border-radius: 22px;
+    box-sizing: content-box;
+    background-color: black;
+}
+
+.horizontalSeparator{
+    height: 2px;
+    background-color: black;
+}
+
+#screen{ background-color: white; }
+
+.screens {
+    height: 32px;
+    padding: 3 8 0 8px;
+    font: 28px sans-serif;
+    box-sizing: content-box;
+    // border-bottom: black 1px solid; 
+}
+
+.screens:last-child{ border: none }
+
+#resultScreen{ text-align: right }
+
+.rows {
+    height: 45px;
+    position: relative;
+}
+
+.buttons {
+    position: relative;
+    height: 45px;
+    width: 50px;
+    float: left;
+    cursor: pointer;
+    
+    border-right: black 1px solid;
+    border-bottom: black 1px solid;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.buttons > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rows:last-child > .buttons{ border-bottom: none; }
+.buttons:last-child{ border-right: none; }
+
+.numbers{ background-color: white; }
+.operators, #backspace, #bracket { background-color: #999; }
+.erasers{ background-color: #04c; }
+.evaluators{ background-color: #0c2; }
+.clicked { background-color: #6B6A6E }
+.operators, .erasers, .evaluators, #bracket { color: white; }
+#resultScreen { color: #0c2; }
+
+#backspace > span { top: 20px; }
+.operators { font-size: 31px; }
+#bracket > span { font-size: 22px; top: 20px; }
+#option > span { font-size: 30px; top: 24px; }
+
+.footer {
+    position: relative;    
+    font-weight: 600 ;
+    color: white  ;
+    width: auto;
+    margin-left: 540px;
+    text-align: middle;
+    cursor: pointer;
+    
+
+
+}
+.footer  a {
+    color: white ;
+
+    text-decoration: none ;
+}
